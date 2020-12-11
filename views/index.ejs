@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <title>Créé par @hugolgc</title>
+  </head>
+  <body class="min-h-screen bg-gray-900 flex justify-center items-center">
+
+
+    <form>
+      <input id="pseudo" type="text" name="start" placeholder="Vous" required minlength="4" maxlength="40" class="block h-12 w-64 px-4 bg-gray-800 text-white rounded mb-4">
+      <input id="adversaire" type="text" name="start" placeholder="Adversaire" required minlength="4" maxlength="40" class="block h-12 w-64 px-4 bg-gray-800 text-white rounded mb-4">
+      <select id="tourner" name="couleur" class="block h-12 w-64 px-4 bg-gray-800 text-white rounded appearance-none mb-4">
+        <option value="blanc">Blanc</option>
+        <option value="noir">Noir</option>
+      </select>
+      <button class="block h-12 w-64 bg-green-600 text-white font-semibold rounded">Jouer</button>
+    </form>
+
+
+    <main class="hidden"></main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
